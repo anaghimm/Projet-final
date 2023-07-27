@@ -1,0 +1,244 @@
+body{
+    background-image: url(pexels-aleksandar-pasaric-1323712.jpg);
+}
+:root{
+    font-size: 62.5%;
+    --color-primary:rgb(161, 7, 196);
+    --color-secondary:rgb(161, 7, 196);
+    --color-font:rgb(250, 250, 250);
+    --color-shadow:rgb(163, 5, 177);
+}
+.darkmode{
+    background-image: url(photo-1603366615917-1fa6dad5c4fa.jpg);
+}
+header i{
+    font-size: 20px;
+    margin-left: 30px;
+}
+header p{
+    margin-top: 20px;
+    color:rgb(95, 42, 118);
+    letter-spacing: 1px;
+    font-size: larger;
+    text-transform: capitalize;
+    position: fixed;
+}
+header p a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    background-image: url(pexels-aleksandar-pasaric-1323712.jpg);
+    font-size: 1.6rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+p,i,h1{
+    color:rgb(95, 8, 114)
+}
+i{
+    font-size: 3.2rem;
+}
+h1{
+    font-size: 3.2rem;
+}
+section{
+    display: flex;
+    align-items: center;
+    height:100%
+}
+.container{
+    margin-inline: auto;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.painel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width:20rem;
+    margin-block:5rem;
+    padding:1rem;
+    border-radius: 10rem;
+    box-shadow: 0px 9px 42px -8px var(--color-shadow);
+    -webkit-box-shadow: 0px 9px 42px -8px var(--color-shadow);
+    -moz-box-shadow: 0px 9px 42px -8px rgba(133,28,203,1);
+}
+.painelp{
+    opacity: .8;
+    transition: 1s ease-in;
+}
+.painel p.active{
+    opacity: 1;
+    color:var(--color-secondary)
+}
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:30rem;
+    height:30rem;
+    border-radius:50%;
+    box-shadow: 0px 9px 42px -8px var(--color-shadow);
+    -webkit-box-shadow: 0px 9px 42px -8px var(--color-shadow);
+    -moz-box-shadow: 0px 9px 42px -8px rgba(133,28,203,1);
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:26rem;
+    height:26rem;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    position: relative;
+}
+.circle::before
+{
+    content: '';
+    position: absolute;
+    width:96%;
+    height:95%;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+.time{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.time p{
+    font-size:5.6rem
+}
+.time p:nth-of-type(2){
+    position: relative;
+    top:-.5rem;
+    margin-inline: 1rem;
+}
+.controls{
+    margin-top: 3rem;
+}
+.controls button{
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.controls #reset{
+    display: none;
+}
+#plussesh button{
+    margin-top: 50px;
+    width:150px;
+    height:50px;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgb(185, 181, 181);
+    cursor:pointer
+}
+#plussesh input{
+    margin-top: 50px;
+    width:190px;
+    height:50px;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+#plussesh input[placeholder]{
+text-align: center;
+}
+/*tablet */
+@media screen and (max-width: 1024px) {
+h1 {
+    font-size: 2.8rem;
+}
+
+.painel {
+    width: 16rem;
+}
+
+.timer {
+    width: 18rem;
+    height: 18rem;
+}
+
+.circle {
+    width: 14rem;
+    height: 14rem;
+}
+
+.time p {
+    font-size: 4.2rem;
+}
+
+.controls button {
+    font-size: 2.4rem;
+}
+
+#plussesh button {
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+}
+
+#plussesh input {
+    width: 130px;
+    height: 30px;
+    font-size: 10px;
+}
+}
+/*phone*/
+@media screen and (max-width: 480px) {
+h1 {
+ font-size: 2rem;
+}
+  
+.painel {
+width: 14rem;
+}
+
+.timer {
+width: 16rem;
+height: 16rem;
+}
+
+.circle {
+    width: 12rem;
+    height: 12rem;
+}
+
+.time p {
+    font-size: 3.6rem;
+}
+
+.controls button {
+    font-size: 2rem;
+}
+
+#plussesh button {
+    width: 90px;
+    height: 25px;
+    font-size: 8px;
+}
+
+#plussesh input {
+    width: 110px;
+    height: 25px;
+    font-size: 8px;
+}
+}
+  
+  
+  
+  
+  
+  
+  

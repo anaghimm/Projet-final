@@ -1,0 +1,426 @@
+
+*{
+    font-family: 'tahoma', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url(pexels-aleksandar-pasaric-1323712.jpg)
+}
+/*styling the header*/
+.darkmode{
+    background-image: url(photo-1603366615917-1fa6dad5c4fa.jpg);
+}
+/*changing thr body f night w day mode*/
+body{
+    transition:background-image 0,5s smooth;
+}
+header{
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap:20px
+}
+header nav li:hover{
+    border-bottom: 2px solid rgb(53, 4, 74);
+}
+header a{
+    text-decoration: none;
+    color:rgb(53, 4, 74);
+    letter-spacing: 1px;
+    font-size: large;
+    text-transform: capitalize;
+}
+#firstpoint a{
+    margin-top: 20px;
+    color:rgb(95, 42, 118);
+    letter-spacing: 1px;
+    font-size: large;
+    text-transform: capitalize;
+}
+#day{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left:60px ;
+}
+/*partie about*/
+#about{
+    border-radius: 10px;
+    display: flex;
+}
+#leftside{
+    width:50%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#rightside{
+    width:50%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content: center;
+    align-content: center;
+}
+#rightside h1{
+    margin-left: 100px;
+    color:rgb(53, 4, 74);
+    text-transform: uppercase;
+}
+#rightside p {
+    color:grey;
+    text-align: center;
+    letter-spacing: 1px;
+}
+#rightside ul{
+    list-style: none;
+    color:grey
+}
+
+#leftside img{
+    width:290px;
+    margin-left: 79px;
+}
+#leftside h1{
+    color:rgb(53, 4, 74);
+    margin-left: 130px;
+}
+#leftside p{
+    margin-left: 130px;
+}
+#leftside button{
+    border: 0;
+    border-radius: 10px;
+    margin-left: 150px;
+    width: 200px;
+    height:50px;
+    background-image:linear-gradient(to right,rgb(106, 216, 228),rgb(185, 70, 218));
+    transition: transform 0.4s ease-in;
+}
+#leftside button:hover{
+    box-shadow: 10px 10px 30px rgb(53, 4, 74);
+    transform: scale(1.1);
+}
+
+#leftside a{
+    color:white;
+    text-decoration: none;
+}
+
+#services{
+    width:100%;
+    height:100vh;
+}
+#services h1{
+    color:rgb(53, 4, 74);
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:50px ;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    padding:40px;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    height:70vh;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease ;
+}
+.card:hover{
+    box-shadow: 10px 10px 30px rgb(53, 4, 74);
+    transform: scale(1.1);
+}
+
+.imageservice img{
+    width:100px;
+    margin-left:90px;
+}
+.nameservice{
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(53, 4, 74);
+}
+.descriptionservice{
+    text-align: center;
+    letter-spacing: 1px;
+    margin:10px;
+    color: gray;
+}
+.getservice button{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 60px;
+    border: 0;
+    border-radius: 10px;
+    width: 200px;
+    height:50px;
+    background-image:linear-gradient(to right,rgb(106, 216, 228),rgb(185, 70, 218));
+    cursor:pointer;
+    color:white;
+    transition: transform 0.4s ease-in;
+}
+.getservice button a{
+    text-decoration: none;
+}
+.getservice button:hover{
+    box-shadow: 10px 10px 30px rgb(53, 4, 74);
+    transform: scale(1.1);
+}
+
+
+#anothertitle{
+    color:rgb(53, 4, 74);
+    text-align: center;
+
+}
+#blogs{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+#blogs button{
+    width:100px;
+    height:50px;
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(84, 38, 127, 0.555);
+    transition: transform 0.4s ease-in;
+}
+#blogs button:hover{
+    box-shadow: 10px 10px 30px rgb(53, 4, 74);
+    transform: scale(1.1);
+}
+#blogs h3{
+    text-align: center;
+    color:rgba(86, 8, 105, 0.479);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.readmore a{
+    text-decoration: none;
+}
+
+#ourpeople{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+#feedbackstitle{
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(53, 4, 74);
+}
+.container{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial{
+    position: relative;
+    max-width: 900px;
+    width:100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+.image{
+    height:170px;
+    width:170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.slide{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.slide p{
+    text-align: center;
+    padding:0 160px;
+    font-size: 14px;
+    font-weight: 500;
+    color:gray
+}
+.slide i{
+    font-size: 30px;
+    color:#4070f4
+}
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .name{
+    font-size: 14px;
+    font-weight: 400;
+    color:rgb(34, 29, 29)
+}
+.details .job{
+    font-size: 13px;
+    font-weight: 300;
+    color: gray;
+}
+.testicontent {
+    padding-bottom: 40px;
+}
+#forum button{
+    background-image:linear-gradient(to right,rgb(106, 216, 228),rgb(185, 70, 218));
+    border: 0;
+    border-radius: 10px;
+    width: 200px;
+    height:50px;
+    cursor:pointer;
+    color:white;
+    margin-left: 650px;
+    transition: transform 0.4s ease-in;
+}
+#forum button a{
+    text-decoration: none;
+}
+#forum button:hover{
+    box-shadow: 10px 10px 30px rgb(53, 4, 74);
+    transform: scale(1.1);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+footer a{
+    text-decoration: none;
+    margin-left: 30px;
+    color:rgb(95, 42, 118);
+    letter-spacing: 1px;
+    font-size: large;
+    text-transform: capitalize;
+}
+footer ul{
+    list-style: none;
+    display: flex; 
+}
+#contactlist{
+    display: flex;
+    flex-direction: column;
+}
+#contactlist h3{
+    color:rgb(95, 42, 118);
+    letter-spacing: 1px;
+}
+
+
+
+
+
+@media only (min-width: 600px) and (max-width: 1023px) {
+header {
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul {
+    flex-direction: column;
+}
+
+#leftside,
+#rightside {
+    width: 100%;
+    padding: 20px;
+}
+
+.cards .card {
+    width: calc(50% - 40px);
+    min-width: unset;
+}
+#services p{
+    font-size: small;
+}
+#about {
+    flex-direction: column;
+    align-items: center;
+}
+
+#leftside img,
+#leftside h1,
+#leftside p {
+    margin-left: 0;
+    text-align: center;
+}
+
+.testimonial {
+    padding: 30px 0;
+}
+}
+/* Phone */
+@media only screen and (max-width: 599px) {
+#about {
+    flex-direction: column;
+    align-items: center;
+}
+
+#leftside,
+#rightside {
+    width: 100%;
+}
+
+#leftside img,
+#leftside h1,
+#leftside p {
+    margin-left: 0;
+    text-align: center;
+}
+.testimonial {
+    margin-top: 900px;
+    padding: 30px 0;
+}
+header {
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul {
+    flex-direction: column;
+}
+
+.cards .card {
+    width: 100%;
+    
+}
+#services p{
+    font-size: small;
+}
+#services button{
+    margin-right: 50px;
+}
+
+#forum button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+}
+}

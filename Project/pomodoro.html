@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="pomodoro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="pomodoro.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
+</head>
+<header>
+    <p><a href="index.html">ProductiveMe</a><i id="day" class="fa-solid fa-sun" style="color:gray"></i></p>
+</header>
+<body>
+    <section>
+        <div class="container">
+             <h1 id="title">Pomodoro Session</h1>
+            <div class="painel">
+                <p id="work">Work</p>
+                <p id="break">Break</p>
+            </div>
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="mins">25</p>
+                        <p>:</p>
+                        <p id="secs">00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-play" style="color: #8e2da9;"></i></button>
+                <a id="reset" href="/"><i class="fa-solid fa-arrows-rotate" style="color: #8e2da9;"></i></a>
+            </div>
+            <div id="plussesh">
+                <input id="newsesh"type="Text" placeholder="You can use your ToDolist">
+                <button onclick="changeName()">Add session</button>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

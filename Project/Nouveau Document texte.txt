@@ -1,0 +1,32 @@
+ The fetch function is a built-in JavaScript function that allows you to make HTTP requests to fetch resources from a URL. In this case, we are fetching data from the URL 'https://zenquotes.io/api/random'.
+
+So, in summary, this code fetches data from the URL 'https://zenquotes.io/api/random', and when the response is available, it parses the response body as JSON and returns a Promise that resolves to the JavaScript object representation of the JSON data.
+
+After fetching the data and parsing it as JSON, you can use the then() method again to handle the resolved value, which will be the JavaScript object containing the fetched quote data. For example, you can chain another .then() to further process the data or display it on the webpage.
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Initialize the Swiper
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+      slidesPerView: 1,
+      grabCursor: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+/*daynight mode*/
+const day = document.getElementById("day");
+let nightmode = false;
+day.addEventListener("click", () => {
+    nightmode = !nightmode;
+    document.body.classList.toggle("darkmode", nightmode);
+    day.classList.toggle("fa-sun", !nightmode);
+    day.classList.toggle("fa-moon", nightmode);
+});

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<div id="header"><h2 id="title"><a href="index.html">Productiveme</a></h2><i id="day" class="fa-solid fa-sun" style="color:gray"></i></div>
+<body>
+    <div class="container">
+        <div class="todoapp">
+            <div class="header">
+                <h2>ToDo<img src="todo.png"></h2>
+                <div class="row">
+                    <button id="row1"onclick="openPopup()">New task</button>
+                    <button id="startsech"><a href="pomodoro.html">Start your sessions</a></button>
+                </div>
+            </div>
+            <div class="popup" id="popup">
+                <div id="titleclose">
+                    <h3>Add a new todo</h3>
+                    <p onclick="closePopup()">X</p>
+                </div>
+                <br>
+                <div >
+                    <label for="title">What's the task? </label>
+                    <input type="text" class="inputbox" placeholder="Give your title" id="firstpart">
+                </div>
+                <br>
+                <div >
+                    <label for="description">What's your todo Description? </label>
+                    <input type="text" class="inputbox" placeholder="Describe your task" id="secondpart">
+                </div>
+                <br>
+                <div>
+                    <label for="pomodoro">How many pomodoro Sessions needed? </label>
+                    <input type="text" id="thirdpart">
+    
+                </div>
+                <br>
+                <input id="submit" type="submit" value="Add and save" onclick="addTask()">
+            </div>
+            <ul id="listcontainer">
+                <!-- <li class="checked">task1</li>
+                <li class="checked">task2</li>
+                <li class="checked">task3</li> -->
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+body{
+    width:100%;
+    min-height: 100vh;
+    margin: 0;
+    padding:0;
+    background-image:url(pexels-aleksandar-pasaric-1323712.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#title i{
+    margin-left: 30px;
+}
+#title a{
+    margin-left: 50px;
+    text-decoration: none;
+    color:rgb(95, 42, 118);
+    letter-spacing: 1px;
+    font-size: large;
+    text-transform: capitalize;
+}
+.darkmode{
+    background-image: url(photo-1603366615917-1fa6dad5c4fa.jpg);
+}
+form{
+    margin-top: 50px;
+    width:40%;
+    height:90vh;
+    background-color: rgb(209, 208, 208);
+    border-radius: 10px;
+    position: absolute;
+    top:5%;
+    right: 30%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding:20px
+}
+div{
+    margin-bottom: 6px;
+}
+#description{
+    text-align: center;
+    color:rgb(95, 42, 118);
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+#description h2{
+    font-size: 27px;
+}
+#description h4{
+    font-size: 15px;
+}
+label{
+    color:rgb(68, 2, 97);
+    margin-right: 10px;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+input{
+    width:240px;
+    height:27px;
+    border: 0;
+    border-radius: 10px;
+}
+input[placeholder]{
+    text-align: center;
+}
+#picture{
+    margin-top:10px;
+}
+#edu,#job,#other{
+    width:16px;
+    margin-left: 25px;
+}
+#txt1{
+    padding-right: 30px;
+}
+#button{
+    color:rgb(142, 141, 141);
+    margin-left: 230px;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 10px;
+    width: 150px;
+    height:50px;
+    transition: all 0.4s ease-in;
+}
+#button:hover{
+    color:white;
+    box-shadow: 10px 10px 30px rgb(53, 4, 74);
+    transform: scale(1.06);
+    background-image:linear-gradient(to right,rgb(63, 3, 77),rgb(115, 6, 145));
+}
+@media screen and (max-width: 1024px) {
+form {
+    width: 70%;
+    right: 15%;
+}
+
+#title a {
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+#description h2 {
+    font-size: 24px;
+}
+
+#description h4 {
+    font-size: 14px;
+}
+
+label {
+    font-size: 16px;
+}
+input {
+    width: 220px;
+}
+
+#button {
+    margin-left: 200px;
+    width: 130px;
+    height: 45px;
+    font-size: 18px;
+}
+}
+
+/*phone */
+@media screen and (max-width: 768px) {
+form {
+    width: 80%;
+    right: 10%;
+}
+
+#title a {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+#description h2 {
+    font-size: 20px;
+}
+
+#description h4 {
+    font-size: 13px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input {
+    width: 200px;
+}
+
+#button {
+    margin-left: 180px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+}
+}
